@@ -57,6 +57,7 @@ public class BeerControllerTest {
     }
 
     @Test
+    // verificando o codigo de  criado com sucesso
     void whenPOSTIsCalledThenABeerIsCreated() throws Exception {
         // given
         BeerDTO beerDTO = BeerDTOBuilder.builder().build().toBeerDTO();
@@ -75,6 +76,7 @@ public class BeerControllerTest {
     }
 
     @Test
+    // vai validar o campo obrigatorio
     void whenPOSTIsCalledWithoutRequiredFieldThenAnErrorIsReturned() throws Exception {
         // given
         BeerDTO beerDTO = BeerDTOBuilder.builder().build().toBeerDTO();
@@ -88,6 +90,7 @@ public class BeerControllerTest {
     }
 
     @Test
+    //Valida quando é encontrado no sistema
     void whenGETIsCalledWithValidNameThenOkStatusIsReturned() throws Exception {
         // given
         BeerDTO beerDTO = BeerDTOBuilder.builder().build().toBeerDTO();
@@ -105,6 +108,7 @@ public class BeerControllerTest {
     }
 
     @Test
+    // verifica se não é encontrado no sistema
     void whenGETIsCalledWithoutRegisteredNameThenNotFoundStatusIsReturned() throws Exception {
         // given
         BeerDTO beerDTO = BeerDTOBuilder.builder().build().toBeerDTO();

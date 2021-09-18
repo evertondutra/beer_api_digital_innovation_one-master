@@ -51,6 +51,7 @@ public class BeerServiceTest {
     private BeerService beerService;
 
     @Test
+    //verifica se foi criado com sucesso
     void whenBeerInformedThenItShouldBeCreated() throws BeerAlreadyRegisteredException {
         // given
         BeerDTO expectedBeerDTO = BeerDTOBuilder.builder().build().toBeerDTO();
@@ -71,6 +72,7 @@ public class BeerServiceTest {
     }
 
     @Test
+    //verifica se é duplicado
     void whenAlreadyRegisteredBeerInformedThenAnExceptionShouldBeThrown() {
         // given
         BeerDTO expectedBeerDTO = BeerDTOBuilder.builder().build().toBeerDTO();
@@ -84,6 +86,7 @@ public class BeerServiceTest {
     }
 
     @Test
+    //verifica se foi encontrada com sucesso
     void whenValidBeerNameIsGivenThenReturnABeer() throws BeerNotFoundException {
         // given
         BeerDTO expectedFoundBeerDTO = BeerDTOBuilder.builder().build().toBeerDTO();
@@ -99,6 +102,7 @@ public class BeerServiceTest {
     }
 
     @Test
+    // verifica se não há o registro informado
     void whenNotRegisteredBeerNameIsGivenThenThrowAnException() {
         // given
         BeerDTO expectedFoundBeerDTO = BeerDTOBuilder.builder().build().toBeerDTO();
