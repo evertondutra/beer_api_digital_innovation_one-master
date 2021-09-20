@@ -115,6 +115,7 @@ public class BeerServiceTest {
     }
 
     @Test
+    // Valida a lista de cerveja
     void whenListBeerIsCalledThenReturnAListOfBeers() {
         // given
         BeerDTO expectedFoundBeerDTO = BeerDTOBuilder.builder().build().toBeerDTO();
