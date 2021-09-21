@@ -213,7 +213,7 @@ public class BeerControllerTest {
 //                .contentType(MediaType.APPLICATION_JSON)
 //                .con(asJsonString(quantityDTO))).andExpect(status().isBadRequest());
 //    }
-
+//
 //    @Test
 //    void whenPATCHIsCalledWithInvalidBeerIdToIncrementThenNotFoundStatusIsReturned() throws Exception {
 //        QuantityDTO quantityDTO = QuantityDTO.builder()
@@ -248,7 +248,7 @@ public class BeerControllerTest {
 //    }
 //
 //    @Test
-//    void whenPATCHIsCalledToDEcrementLowerThanZeroThenBadRequestStatusIsReturned() throws Exception {
+//    void whenPATCHIsCalledToDecrementLowerThanZeroThenBadRequestStatusIsReturned() throws Exception {
 //        QuantityDTO quantityDTO = QuantityDTO.builder()
 //                .quantity(60)
 //                .build();
