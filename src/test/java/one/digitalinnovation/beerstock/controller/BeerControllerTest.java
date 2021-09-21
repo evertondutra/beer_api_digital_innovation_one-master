@@ -197,7 +197,7 @@ public class BeerControllerTest {
                 .andExpect(jsonPath("$.type", is(beerDTO.getType().toString())))
                 .andExpect(jsonPath("$.quantity", is(beerDTO.getQuantity())));
     }
-
+//
 //    @Test
 //    void whenPATCHIsCalledToIncrementGreatherThanMaxThenBadRequestStatusIsReturned() throws Exception {
 //        QuantityDTO quantityDTO = QuantityDTO.builder()
@@ -211,7 +211,7 @@ public class BeerControllerTest {
 //
 //        mockMvc.perform(patch(BEER_API_URL_PATH + "/" + VALID_BEER_ID + BEER_API_SUBPATH_INCREMENT_URL)
 //                .contentType(MediaType.APPLICATION_JSON)
-//                .con(asJsonString(quantityDTO))).andExpect(status().isBadRequest());
+//                .content(asJsonString(quantityDTO))).andExpect(status().isBadRequest());
 //    }
 //
 //    @Test
